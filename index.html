@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f3f4">
+  <meta name="description" content="Алина, прости меня. Это не попытка оправдаться — это признание моей вины.">
+  <title>Алина, прости меня</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="hero">
+    <nav aria-label="Навигация по странице">
+      <a class="mark" href="#top" aria-label="В начало">А</a>
+      <a class="quiet-link" href="#words">прочитать до конца</a>
+    </nav>
+
+    <main id="top">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Это письмо для тебя</p>
+        <h1>Алина,<br><em>прости меня.</em></h1>
+        <p class="lead">Я сильно провинился. И я не хочу прятаться за объяснениями или красивыми словами.</p>
+        <a class="button" href="#words">Сказать честно</a>
+      </div>
+      <div class="flower-wrap reveal delay-1" aria-hidden="true">
+        <svg class="flower" viewBox="0 0 340 500" role="img">
+          <path class="stem" d="M177 487 C 175 397, 205 322, 168 238 C 143 181, 163 124, 174 71"/>
+          <path class="leaf" d="M176 359 C116 336 91 300 90 258 C139 267 170 298 176 359Z"/>
+          <path class="leaf right" d="M184 301 C237 276 255 241 250 204 C210 220 185 252 184 301Z"/>
+          <g class="bloom">
+            <path d="M174 116 C116 89 104 37 133 17 C161 0 180 36 177 77 C183 32 210 9 237 29 C266 52 231 94 183 116Z"/>
+            <path d="M173 119 C124 145 79 123 80 87 C80 55 124 59 163 93 C139 51 153 14 184 13 C222 11 223 64 181 112Z"/>
+            <circle cx="176" cy="111" r="24"/>
+          </g>
+        </svg>
+        <span class="flower-note">один цветок —<br>вместо тысячи оправданий</span>
+      </div>
+    </main>
+  </header>
+
+  <section class="truth" id="words">
+    <div class="section-number">01</div>
+    <div class="truth-copy reveal">
+      <p class="eyebrow">Самое главное</p>
+      <h2>Я был неправ.</h2>
+      <p>Я понимаю, что причинил тебе боль. Мне правда жаль — не потому, что мне тяжело от последствий, а потому, что тяжело сделал тебе.</p>
+      <p>Ты не обязана простить меня сразу. И я не буду просить тебя забыть то, что случилось. Я просто хочу честно признать свою вину.</p>
+    </div>
+    <blockquote class="reveal delay-1">«Мне не всё равно.<br>Ты мне не всё равно.»</blockquote>
+  </section>
+
+  <section class="promise">
+    <div class="promise-inner reveal">
+      <p class="eyebrow light">Что я могу сделать</p>
+      <h2>Не обещать невозможного.<br>А меняться поступками.</h2>
+      <div class="promise-grid">
+        <article><span>Слушать</span><p>Не перебивать и не обесценивать твои чувства.</p></article>
+        <article><span>Признать</span><p>Не искать оправданий там, где нужно взять ответственность.</p></article>
+        <article><span>Исправлять</span><p>Показать перемены временем и действиями, а не словами.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="ending">
+    <div class="ending-card reveal">
+      <svg class="small-heart" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 54S8 40 8 22c0-9 11-16 24-5 13-11 24-4 24 5 0 18-24 32-24 32Z"/></svg>
+      <p class="eyebrow">Без давления. Просто честно.</p>
+      <h2>Прости меня, Алина.</h2>
+      <p>Если ты захочешь поговорить — я буду рядом и выслушаю тебя. Столько, сколько нужно.</p>
+      <button class="button button-dark" id="finalButton" type="button">Нажми, если дочитала</button>
+      <div class="final-note" id="finalNote" aria-live="polite" hidden>
+        <span>Спасибо, что прочитала.</span>
+        <strong>Я всё равно буду стараться стать лучше.</strong>
+      </div>
+    </div>
+    <footer>С искренним сожалением и надеждой.</footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
